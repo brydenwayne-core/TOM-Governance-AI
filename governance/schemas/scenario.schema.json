@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "maxLength": 160,
+      "minLength": 3,
+      "title": "Title",
+      "type": "string"
+    },
+    "proposal": {
+      "maxLength": 12000,
+      "minLength": 20,
+      "title": "Proposal",
+      "type": "string"
+    },
+    "desired_outcome": {
+      "maxLength": 2000,
+      "minLength": 3,
+      "title": "Desired Outcome",
+      "type": "string"
+    },
+    "horizon": {
+      "default": "90-day pilot",
+      "enum": [
+        "90-day pilot",
+        "12-month strategy",
+        "Three-year transformation"
+      ],
+      "title": "Horizon",
+      "type": "string"
+    },
+    "mode": {
+      "default": "both",
+      "enum": [
+        "both",
+        "current",
+        "strategic"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "budget": {
+      "default": 0,
+      "maximum": 1000000000000.0,
+      "minimum": 0,
+      "title": "Budget",
+      "type": "number"
+    },
+    "projected_revenue": {
+      "default": 0,
+      "maximum": 1000000000000.0,
+      "minimum": 0,
+      "title": "Projected Revenue",
+      "type": "number"
+    },
+    "document_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 100,
+      "title": "Document Ids",
+      "type": "array"
+    },
+    "weights": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Weights",
+      "type": "object"
+    }
+  },
+  "required": [
+    "title",
+    "proposal",
+    "desired_outcome"
+  ],
+  "title": "Scenario",
+  "type": "object"
+}

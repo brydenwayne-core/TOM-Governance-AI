@@ -1,0 +1,82 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "code": {
+      "title": "Code",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "mandate": {
+      "title": "Mandate",
+      "type": "string"
+    },
+    "principles": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Principles",
+      "type": "array"
+    },
+    "constraints": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Constraints",
+      "type": "array"
+    },
+    "evidence_requirements": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Requirements",
+      "type": "array"
+    },
+    "metrics": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Metrics",
+      "type": "array"
+    },
+    "escalation": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Escalation",
+      "type": "array"
+    },
+    "keywords": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Keywords",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "code",
+    "name",
+    "version",
+    "mandate",
+    "principles",
+    "constraints",
+    "evidence_requirements",
+    "metrics",
+    "escalation",
+    "keywords"
+  ],
+  "title": "AdvisorProfile",
+  "type": "object"
+}

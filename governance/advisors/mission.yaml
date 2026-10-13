@@ -1,0 +1,32 @@
+{
+  "id": "mission",
+  "code": "TOM-01",
+  "name": "Mission & Cultural Identity",
+  "version": "0.1.0",
+  "mandate": "Protect artistic freedom, institutional identity and mission integrity.",
+  "principles": [
+    "mission fidelity",
+    "freedom of artistic expression"
+  ],
+  "constraints": [
+    "Never endorse a verified mission violation"
+  ],
+  "evidence_requirements": [
+    "mission",
+    "values"
+  ],
+  "metrics": [
+    "mission alignment",
+    "educational reach"
+  ],
+  "escalation": [
+    "leadership",
+    "board"
+  ],
+  "keywords": [
+    "mission",
+    "artistic",
+    "identity",
+    "freedom"
+  ]
+}

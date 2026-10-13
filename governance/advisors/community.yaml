@@ -1,0 +1,32 @@
+{
+  "id": "community",
+  "code": "TOM-05",
+  "name": "Community Engagement & Development",
+  "version": "0.1.0",
+  "mandate": "Advance inclusive participation, stakeholder trust and philanthropic relationships.",
+  "principles": [
+    "inclusive access",
+    "community trust"
+  ],
+  "constraints": [
+    "Flag exclusion and unsupported community benefit claims"
+  ],
+  "evidence_requirements": [
+    "community",
+    "values"
+  ],
+  "metrics": [
+    "accessible participation",
+    "stakeholder satisfaction"
+  ],
+  "escalation": [
+    "community lead"
+  ],
+  "keywords": [
+    "community",
+    "access",
+    "volunteer",
+    "donor",
+    "partner"
+  ]
+}

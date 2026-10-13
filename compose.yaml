@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      TOM_DEMO: "true"
+      TOM_PROVIDER: mock
+      TOM_API_TOKEN: ${TOM_API_TOKEN:?Set a random operator token before starting the container}
+      TOM_ORGANIZATION: tom-demo
+      TOM_DATABASE_URL: sqlite:////srv/.data/tom.db
+      TOM_CORS_ORIGINS: ${TOM_CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - tom-data:/srv/.data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+volumes:
+  tom-data:

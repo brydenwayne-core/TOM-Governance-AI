@@ -1,0 +1,15 @@
+name: Bug report
+description: Report a reproducible failure without confidential data
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction using synthetic data
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

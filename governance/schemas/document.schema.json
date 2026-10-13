@@ -1,0 +1,185 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "document_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.-]+$",
+      "title": "Document Id",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "organization": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Organization",
+      "type": "string"
+    },
+    "document_type": {
+      "enum": [
+        "mission",
+        "vision",
+        "values",
+        "bylaws",
+        "strategy",
+        "finance",
+        "collections",
+        "community",
+        "governance",
+        "other"
+      ],
+      "title": "Document Type",
+      "type": "string"
+    },
+    "version": {
+      "pattern": "^\\d+(?:\\.\\d+){0,2}$",
+      "title": "Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "simulated",
+        "verified",
+        "proposed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "approval_status": {
+      "enum": [
+        "approved",
+        "pending",
+        "not_applicable"
+      ],
+      "title": "Approval Status",
+      "type": "string"
+    },
+    "effective_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective Date"
+    },
+    "classification": {
+      "enum": [
+        "public_demo",
+        "internal",
+        "confidential"
+      ],
+      "title": "Classification",
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "repository",
+        "upload"
+      ],
+      "title": "Source Type",
+      "type": "string"
+    },
+    "authoritative": {
+      "default": false,
+      "title": "Authoritative",
+      "type": "boolean"
+    },
+    "applicable_advisors": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Applicable Advisors",
+      "type": "array"
+    },
+    "approval_evidence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approval Evidence"
+    },
+    "source_location": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Location"
+    },
+    "supersedes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes"
+    },
+    "policy_key": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Policy Key"
+    },
+    "policy_position": {
+      "anyOf": [
+        {
+          "enum": [
+            "allow",
+            "require_review",
+            "prohibit"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Policy Position"
+    }
+  },
+  "required": [
+    "document_id",
+    "title",
+    "organization",
+    "document_type",
+    "version",
+    "status",
+    "approval_status",
+    "classification",
+    "source_type",
+    "applicable_advisors"
+  ],
+  "title": "DocumentMetadata",
+  "type": "object"
+}

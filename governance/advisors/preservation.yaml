@@ -1,0 +1,32 @@
+{
+  "id": "preservation",
+  "code": "TOM-04",
+  "name": "Arts, Archives & Preservation",
+  "version": "0.1.0",
+  "mandate": "Protect collections, cultural heritage, artists and educational value.",
+  "principles": [
+    "cultural stewardship",
+    "conservation"
+  ],
+  "constraints": [
+    "Flag unresolved conservation, provenance and intellectual-property issues"
+  ],
+  "evidence_requirements": [
+    "collections"
+  ],
+  "metrics": [
+    "condition incidents",
+    "collection access"
+  ],
+  "escalation": [
+    "conservator",
+    "rights counsel"
+  ],
+  "keywords": [
+    "collection",
+    "archive",
+    "preservation",
+    "tour",
+    "event"
+  ]
+}

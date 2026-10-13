@@ -1,0 +1,204 @@
+{
+  "$defs": {
+    "Assessment": {
+      "additionalProperties": false,
+      "properties": {
+        "advisor_id": {
+          "title": "Advisor Id",
+          "type": "string"
+        },
+        "position": {
+          "enum": [
+            "support",
+            "conditional",
+            "oppose",
+            "undetermined"
+          ],
+          "title": "Position",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "benefits": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Benefits",
+          "type": "array"
+        },
+        "risks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Risks",
+          "type": "array"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "evidence_gaps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Gaps",
+          "type": "array"
+        },
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Citations",
+          "type": "array"
+        },
+        "gates": {
+          "items": {
+            "$ref": "#/$defs/Gate"
+          },
+          "title": "Gates",
+          "type": "array"
+        },
+        "score": {
+          "maximum": 5,
+          "minimum": 1,
+          "title": "Score",
+          "type": "number"
+        },
+        "current_state": {
+          "title": "Current State",
+          "type": "string"
+        },
+        "strategic_possibilities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Strategic Possibilities",
+          "type": "array"
+        }
+      },
+      "required": [
+        "advisor_id",
+        "position",
+        "rationale",
+        "benefits",
+        "risks",
+        "assumptions",
+        "evidence_gaps",
+        "citations",
+        "gates",
+        "score",
+        "current_state",
+        "strategic_possibilities"
+      ],
+      "title": "Assessment",
+      "type": "object"
+    },
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_id",
+        "version",
+        "chunk_id",
+        "quote"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "Gate": {
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "enum": [
+            "mission",
+            "legal",
+            "safety",
+            "preservation",
+            "authority",
+            "evidence",
+            "finance",
+            "community"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "blocking",
+            "review"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "verified": {
+          "default": false,
+          "title": "Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "category",
+        "reason",
+        "severity"
+      ],
+      "title": "Gate",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "assessment": {
+      "$ref": "#/$defs/Assessment"
+    },
+    "changed": {
+      "title": "Changed",
+      "type": "boolean"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "remaining_objections": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Remaining Objections",
+      "type": "array"
+    }
+  },
+  "required": [
+    "assessment",
+    "changed",
+    "reason",
+    "remaining_objections"
+  ],
+  "title": "Revision",
+  "type": "object"
+}

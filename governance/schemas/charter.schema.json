@@ -1,0 +1,62 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "advisory_only": {
+      "const": true,
+      "title": "Advisory Only",
+      "type": "boolean"
+    },
+    "modes": {
+      "items": {
+        "enum": [
+          "current",
+          "strategic"
+        ],
+        "type": "string"
+      },
+      "title": "Modes",
+      "type": "array"
+    },
+    "hard_gates": {
+      "items": {
+        "enum": [
+          "mission",
+          "legal",
+          "safety",
+          "preservation",
+          "authority",
+          "evidence"
+        ],
+        "type": "string"
+      },
+      "title": "Hard Gates",
+      "type": "array"
+    },
+    "evidence_is_instruction": {
+      "const": false,
+      "title": "Evidence Is Instruction",
+      "type": "boolean"
+    },
+    "scoring_weights": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Scoring Weights",
+      "type": "object"
+    }
+  },
+  "required": [
+    "version",
+    "advisory_only",
+    "modes",
+    "hard_gates",
+    "evidence_is_instruction",
+    "scoring_weights"
+  ],
+  "title": "GovernanceCharter",
+  "type": "object"
+}

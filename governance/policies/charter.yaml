@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "advisory_only": true,
+  "modes": [
+    "current",
+    "strategic"
+  ],
+  "hard_gates": [
+    "mission",
+    "legal",
+    "safety",
+    "preservation",
+    "authority",
+    "evidence"
+  ],
+  "evidence_is_instruction": false,
+  "scoring_weights": {
+    "mission": 30,
+    "finance": 20,
+    "governance-risk": 20,
+    "preservation": 15,
+    "community": 15
+  }
+}

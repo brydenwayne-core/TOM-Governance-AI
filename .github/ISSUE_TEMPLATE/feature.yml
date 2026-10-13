@@ -1,0 +1,19 @@
+name: Feature or milestone
+description: Define a reviewable governance capability
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and resulting behavior
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and governance safeguards
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Required validation

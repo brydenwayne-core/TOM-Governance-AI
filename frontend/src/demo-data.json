@@ -1,0 +1,1647 @@
+{
+  "profiles": [
+    {
+      "id": "mission",
+      "code": "TOM-01",
+      "name": "Mission & Cultural Identity",
+      "version": "0.1.0",
+      "mandate": "Protect artistic freedom, institutional identity and mission integrity.",
+      "principles": [
+        "mission fidelity",
+        "freedom of artistic expression"
+      ],
+      "constraints": [
+        "Never endorse a verified mission violation"
+      ],
+      "evidence_requirements": [
+        "mission",
+        "values"
+      ],
+      "metrics": [
+        "mission alignment",
+        "educational reach"
+      ],
+      "escalation": [
+        "leadership",
+        "board"
+      ],
+      "keywords": [
+        "mission",
+        "artistic",
+        "identity",
+        "freedom"
+      ]
+    },
+    {
+      "id": "finance",
+      "code": "TOM-02",
+      "name": "Financial Stewardship",
+      "version": "0.1.0",
+      "mandate": "Evaluate revenue, reserves, funding diversification and long-term resilience.",
+      "principles": [
+        "financial responsibility",
+        "documented assumptions"
+      ],
+      "constraints": [
+        "Flag unfunded obligations and unsupported revenue assumptions"
+      ],
+      "evidence_requirements": [
+        "finance",
+        "strategy"
+      ],
+      "metrics": [
+        "net operating margin",
+        "reserve coverage"
+      ],
+      "escalation": [
+        "finance committee"
+      ],
+      "keywords": [
+        "revenue",
+        "cost",
+        "budget",
+        "funding"
+      ]
+    },
+    {
+      "id": "governance-risk",
+      "code": "TOM-03",
+      "name": "Governance & Institutional Risk",
+      "version": "0.1.0",
+      "mandate": "Evaluate delegated authority, accountability, compliance and institutional risk.",
+      "principles": [
+        "fiduciary stewardship",
+        "explicit authority"
+      ],
+      "constraints": [
+        "Never represent AI advice as approval or legal determination"
+      ],
+      "evidence_requirements": [
+        "bylaws",
+        "governance"
+      ],
+      "metrics": [
+        "approval gates completed",
+        "control compliance"
+      ],
+      "escalation": [
+        "board",
+        "legal counsel"
+      ],
+      "keywords": [
+        "board",
+        "authority",
+        "legal",
+        "insurance",
+        "policy"
+      ]
+    },
+    {
+      "id": "preservation",
+      "code": "TOM-04",
+      "name": "Arts, Archives & Preservation",
+      "version": "0.1.0",
+      "mandate": "Protect collections, cultural heritage, artists and educational value.",
+      "principles": [
+        "cultural stewardship",
+        "conservation"
+      ],
+      "constraints": [
+        "Flag unresolved conservation, provenance and intellectual-property issues"
+      ],
+      "evidence_requirements": [
+        "collections"
+      ],
+      "metrics": [
+        "condition incidents",
+        "collection access"
+      ],
+      "escalation": [
+        "conservator",
+        "rights counsel"
+      ],
+      "keywords": [
+        "collection",
+        "archive",
+        "preservation",
+        "tour",
+        "event"
+      ]
+    },
+    {
+      "id": "community",
+      "code": "TOM-05",
+      "name": "Community Engagement & Development",
+      "version": "0.1.0",
+      "mandate": "Advance inclusive participation, stakeholder trust and philanthropic relationships.",
+      "principles": [
+        "inclusive access",
+        "community trust"
+      ],
+      "constraints": [
+        "Flag exclusion and unsupported community benefit claims"
+      ],
+      "evidence_requirements": [
+        "community",
+        "values"
+      ],
+      "metrics": [
+        "accessible participation",
+        "stakeholder satisfaction"
+      ],
+      "escalation": [
+        "community lead"
+      ],
+      "keywords": [
+        "community",
+        "access",
+        "volunteer",
+        "donor",
+        "partner"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "TOM-MOCK-009",
+      "title": "Fictional board governance",
+      "organization": "tom-demo",
+      "document_type": "governance",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "governance-risk",
+        "mission",
+        "finance",
+        "preservation",
+        "community"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/board-governance.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "9282694ee88f96669aa6e039387095133cee2d7ecb0964a2be3a602ef73329c8",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-004",
+      "title": "Fictional bylaws",
+      "organization": "tom-demo",
+      "document_type": "bylaws",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "governance-risk",
+        "finance"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/bylaws.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "fe71b965a29a8150bc9369ae137a9923173be4f8e7edfaa910daf6fb0f3570fc",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-007",
+      "title": "Fictional collections policy",
+      "organization": "tom-demo",
+      "document_type": "collections",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "preservation",
+        "governance-risk"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/collections-policy.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "4315cc16c9d1a6bdba2993aba8c2cdeeca4e26e4f0d30600c8e7a71b8ae95966",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-008",
+      "title": "Fictional community engagement policy",
+      "organization": "tom-demo",
+      "document_type": "community",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "community",
+        "mission"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/community-engagement.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "1cc318be81c15dac806c18cc443d6b0e95db3509a2502eae1afe2d25e92cf788",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-006",
+      "title": "Fictional financial policies",
+      "organization": "tom-demo",
+      "document_type": "finance",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "finance",
+        "governance-risk"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/financial-policies.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "0bfe5cba4bdbcefdd9abe1b7d42d30a973705084785acb467c31611c4269554d",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-001",
+      "title": "Fictional mission statement",
+      "organization": "tom-demo",
+      "document_type": "mission",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "mission",
+        "governance-risk",
+        "community"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/mission.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "81f955fad0110ea26dd9d86b738cc14b0a02d823a9096c1ca255b8aa619cad23",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-005",
+      "title": "Fictional strategic plan",
+      "organization": "tom-demo",
+      "document_type": "strategy",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "mission",
+        "finance",
+        "preservation",
+        "community"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/strategic-plan.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "646a07efc23e43ae8162bf7e019ceed32728b8687bc2612582d546a10a32db64",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-003",
+      "title": "Fictional values",
+      "organization": "tom-demo",
+      "document_type": "values",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "mission",
+        "community",
+        "governance-risk"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/values.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "bcdaa1aeeb40e63cb2312025ddf1febbe960c7130cb20482c088f49bdd599480",
+      "active": true,
+      "chunks": 3
+    },
+    {
+      "document_id": "TOM-MOCK-002",
+      "title": "Fictional vision",
+      "organization": "tom-demo",
+      "document_type": "vision",
+      "version": "1.0",
+      "status": "simulated",
+      "approval_status": "not_applicable",
+      "effective_date": null,
+      "classification": "public_demo",
+      "source_type": "repository",
+      "authoritative": false,
+      "applicable_advisors": [
+        "mission",
+        "community"
+      ],
+      "approval_evidence": null,
+      "source_location": "docs/organization/mock/vision.md",
+      "supersedes": null,
+      "policy_key": null,
+      "policy_position": null,
+      "sha256": "bd9e49200f41b89973cb3f53ec2d925c2072a3cab7cfab5400d5b170fcdd8f40",
+      "active": true,
+      "chunks": 3
+    }
+  ],
+  "report": {
+    "id": "illustrative-demo",
+    "created_at": "2026-01-01T00:00:00Z",
+    "organization": "tom-demo",
+    "scenario": {
+      "title": "Expand educational programming at TOM House",
+      "proposal": "Explore paid historical tours, artist workshops and community events through a limited educational pilot that protects collections and accessible participation.",
+      "desired_outcome": "Sustainable revenue, educational reach and inclusive community participation.",
+      "horizon": "90-day pilot",
+      "mode": "both",
+      "budget": 12000.0,
+      "projected_revenue": 18000.0,
+      "document_ids": [],
+      "weights": {
+        "mission": 30.0,
+        "finance": 20.0,
+        "governance-risk": 20.0,
+        "preservation": 15.0,
+        "community": 15.0
+      }
+    },
+    "simulation": true,
+    "demo_evidence": true,
+    "provider": "deterministic-simulation-v1",
+    "configuration_version": "0.1.0",
+    "advisor_versions": {
+      "mission": "0.1.0",
+      "finance": "0.1.0",
+      "governance-risk": "0.1.0",
+      "preservation": "0.1.0",
+      "community": "0.1.0"
+    },
+    "stages": [
+      "intake",
+      "independent",
+      "challenge",
+      "revision",
+      "synthesis",
+      "accountability"
+    ],
+    "execution_trace": [
+      {
+        "stage": "independent",
+        "actor": "mission",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "independent",
+        "actor": "finance",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "independent",
+        "actor": "governance-risk",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "independent",
+        "actor": "preservation",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "independent",
+        "actor": "community",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "challenge",
+        "actor": "facilitator",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "revision",
+        "actor": "mission",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "revision",
+        "actor": "finance",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "revision",
+        "actor": "governance-risk",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "revision",
+        "actor": "preservation",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "revision",
+        "actor": "community",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      },
+      {
+        "stage": "synthesis",
+        "actor": "facilitator",
+        "started_at": "2026-01-01T00:00:00Z",
+        "completed_at": "2026-01-01T00:00:00Z"
+      }
+    ],
+    "initial": [
+      {
+        "advisor_id": "mission",
+        "position": "conditional",
+        "rationale": "SIMULATION: Protect artistic freedom, institutional identity and mission integrity. Verify mission alignment and protect artistic freedom.",
+        "benefits": [
+          "Potential mission alignment improvement; requires validation."
+        ],
+        "risks": [
+          "Verify mission alignment and protect artistic freedom."
+        ],
+        "assumptions": [
+          "Financial inputs are user assumptions, not verified facts."
+        ],
+        "evidence_gaps": [
+          "Verified mission, values documentation."
+        ],
+        "citations": [
+          {
+            "document_id": "TOM-MOCK-005",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-005@1.0:3",
+            "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+          },
+          {
+            "document_id": "TOM-MOCK-001",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-001@1.0:3",
+            "quote": "Support artistic freedom, preserve cultural heritage, and expand inclusive arts education. Do not censor lawful artistic expression to satisfy a revenue opportunity."
+          }
+        ],
+        "gates": [
+          {
+            "category": "mission",
+            "reason": "Verify mission alignment and protect artistic freedom.",
+            "severity": "review",
+            "verified": false
+          }
+        ],
+        "score": 3.5,
+        "current_state": "Undetermined pending authoritative evidence and human review.",
+        "strategic_possibilities": [
+          "Explore a limited pilot measuring mission alignment after human approval."
+        ]
+      },
+      {
+        "advisor_id": "finance",
+        "position": "conditional",
+        "rationale": "SIMULATION: Evaluate revenue, reserves, funding diversification and long-term resilience. Document funding and downside exposure; revenue remains unverified.",
+        "benefits": [
+          "Potential net operating margin improvement; requires validation."
+        ],
+        "risks": [
+          "Document funding and downside exposure; revenue remains unverified."
+        ],
+        "assumptions": [
+          "Financial inputs are user assumptions, not verified facts."
+        ],
+        "evidence_gaps": [
+          "Verified finance, strategy documentation."
+        ],
+        "citations": [
+          {
+            "document_id": "TOM-MOCK-005",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-005@1.0:3",
+            "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+          },
+          {
+            "document_id": "TOM-MOCK-006",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-006@1.0:3",
+            "quote": "New programs require a documented budget, sensitivity analysis and a funding source. Projected revenue is an assumption until independently validated. Do not fund a deficit by assuming unrestricted reserves exist."
+          }
+        ],
+        "gates": [
+          {
+            "category": "finance",
+            "reason": "Document funding and downside exposure; revenue remains unverified.",
+            "severity": "review",
+            "verified": false
+          }
+        ],
+        "score": 3.5,
+        "current_state": "Undetermined pending authoritative evidence and human review.",
+        "strategic_possibilities": [
+          "Explore a limited pilot measuring net operating margin after human approval."
+        ]
+      },
+      {
+        "advisor_id": "governance-risk",
+        "position": "conditional",
+        "rationale": "SIMULATION: Evaluate delegated authority, accountability, compliance and institutional risk. Humans must confirm decision authority, compliance and insurance.",
+        "benefits": [
+          "Potential approval gates completed improvement; requires validation."
+        ],
+        "risks": [
+          "Humans must confirm decision authority, compliance and insurance."
+        ],
+        "assumptions": [
+          "Financial inputs are user assumptions, not verified facts."
+        ],
+        "evidence_gaps": [
+          "Verified bylaws, governance documentation."
+        ],
+        "citations": [
+          {
+            "document_id": "TOM-MOCK-004",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-004@1.0:3",
+            "quote": "The human board retains authority for material financial commitments and policy changes. Advisors have no voting or spending authority. Conflicts of interest require disclosure and recusal."
+          },
+          {
+            "document_id": "TOM-MOCK-007",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-007@1.0:3",
+            "quote": "Tours and events require a conservation review, attendance limits, supervision, and documented rights clearance. No collection may be moved or displayed without appropriate human authorization."
+          }
+        ],
+        "gates": [
+          {
+            "category": "authority",
+            "reason": "Humans must confirm decision authority, compliance and insurance.",
+            "severity": "review",
+            "verified": false
+          }
+        ],
+        "score": 3.5,
+        "current_state": "Undetermined pending authoritative evidence and human review.",
+        "strategic_possibilities": [
+          "Explore a limited pilot measuring approval gates completed after human approval."
+        ]
+      },
+      {
+        "advisor_id": "preservation",
+        "position": "conditional",
+        "rationale": "SIMULATION: Protect collections, cultural heritage, artists and educational value. Conservation, visitor limits and rights require specialist review.",
+        "benefits": [
+          "Potential condition incidents improvement; requires validation."
+        ],
+        "risks": [
+          "Conservation, visitor limits and rights require specialist review."
+        ],
+        "assumptions": [
+          "Financial inputs are user assumptions, not verified facts."
+        ],
+        "evidence_gaps": [
+          "Verified collections documentation."
+        ],
+        "citations": [
+          {
+            "document_id": "TOM-MOCK-005",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-005@1.0:3",
+            "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+          },
+          {
+            "document_id": "TOM-MOCK-007",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-007@1.0:3",
+            "quote": "Tours and events require a conservation review, attendance limits, supervision, and documented rights clearance. No collection may be moved or displayed without appropriate human authorization."
+          }
+        ],
+        "gates": [
+          {
+            "category": "preservation",
+            "reason": "Conservation, visitor limits and rights require specialist review.",
+            "severity": "review",
+            "verified": false
+          }
+        ],
+        "score": 3.5,
+        "current_state": "Undetermined pending authoritative evidence and human review.",
+        "strategic_possibilities": [
+          "Explore a limited pilot measuring condition incidents after human approval."
+        ]
+      },
+      {
+        "advisor_id": "community",
+        "position": "conditional",
+        "rationale": "SIMULATION: Advance inclusive participation, stakeholder trust and philanthropic relationships. Validate accessibility and community benefit through consultation.",
+        "benefits": [
+          "Potential accessible participation improvement; requires validation."
+        ],
+        "risks": [
+          "Validate accessibility and community benefit through consultation."
+        ],
+        "assumptions": [
+          "Financial inputs are user assumptions, not verified facts."
+        ],
+        "evidence_gaps": [
+          "Verified community, values documentation."
+        ],
+        "citations": [
+          {
+            "document_id": "TOM-MOCK-005",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-005@1.0:3",
+            "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+          },
+          {
+            "document_id": "TOM-MOCK-002",
+            "version": "1.0",
+            "chunk_id": "TOM-MOCK-002@1.0:3",
+            "quote": "Build a sustainable, accessible cultural home for future generations through stewardship and responsible experimentation."
+          }
+        ],
+        "gates": [
+          {
+            "category": "community",
+            "reason": "Validate accessibility and community benefit through consultation.",
+            "severity": "review",
+            "verified": false
+          }
+        ],
+        "score": 3.5,
+        "current_state": "Undetermined pending authoritative evidence and human review.",
+        "strategic_possibilities": [
+          "Explore a limited pilot measuring accessible participation after human approval."
+        ]
+      }
+    ],
+    "challenges": [
+      {
+        "from_advisor": "preservation",
+        "to_advisor": "finance",
+        "concern": "Do estimates include conservation staffing and visitor controls?",
+        "response": "Include these costs in sensitivity analysis; revenue remains an assumption."
+      },
+      {
+        "from_advisor": "community",
+        "to_advisor": "mission",
+        "concern": "Could participation fees exclude communities?",
+        "response": "Preserve affordable access and consult affected communities."
+      },
+      {
+        "from_advisor": "governance-risk",
+        "to_advisor": "preservation",
+        "concern": "Who can authorize collections access?",
+        "response": "Human leadership and a conservator must establish applicable controls."
+      }
+    ],
+    "revisions": [
+      {
+        "assessment": {
+          "advisor_id": "mission",
+          "position": "conditional",
+          "rationale": "SIMULATION: Protect artistic freedom, institutional identity and mission integrity. Verify mission alignment and protect artistic freedom.",
+          "benefits": [
+            "Potential mission alignment improvement; requires validation."
+          ],
+          "risks": [
+            "Verify mission alignment and protect artistic freedom."
+          ],
+          "assumptions": [
+            "Financial inputs are user assumptions, not verified facts."
+          ],
+          "evidence_gaps": [
+            "Verified mission, values documentation."
+          ],
+          "citations": [
+            {
+              "document_id": "TOM-MOCK-005",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-005@1.0:3",
+              "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+            },
+            {
+              "document_id": "TOM-MOCK-001",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-001@1.0:3",
+              "quote": "Support artistic freedom, preserve cultural heritage, and expand inclusive arts education. Do not censor lawful artistic expression to satisfy a revenue opportunity."
+            }
+          ],
+          "gates": [
+            {
+              "category": "mission",
+              "reason": "Verify mission alignment and protect artistic freedom.",
+              "severity": "review",
+              "verified": false
+            }
+          ],
+          "score": 3.5,
+          "current_state": "Undetermined pending authoritative evidence and human review.",
+          "strategic_possibilities": [
+            "Explore a limited pilot measuring mission alignment after human approval."
+          ]
+        },
+        "changed": false,
+        "reason": "Maintained conditions after deliberation.",
+        "remaining_objections": [
+          "Verify mission alignment and protect artistic freedom."
+        ]
+      },
+      {
+        "assessment": {
+          "advisor_id": "finance",
+          "position": "conditional",
+          "rationale": "SIMULATION: Evaluate revenue, reserves, funding diversification and long-term resilience. Document funding and downside exposure; revenue remains unverified.",
+          "benefits": [
+            "Potential net operating margin improvement; requires validation."
+          ],
+          "risks": [
+            "Document funding and downside exposure; revenue remains unverified.",
+            "Conservation costs were absent from the scenario estimates."
+          ],
+          "assumptions": [
+            "Financial inputs are user assumptions, not verified facts."
+          ],
+          "evidence_gaps": [
+            "Verified finance, strategy documentation."
+          ],
+          "citations": [
+            {
+              "document_id": "TOM-MOCK-005",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-005@1.0:3",
+              "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+            },
+            {
+              "document_id": "TOM-MOCK-006",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-006@1.0:3",
+              "quote": "New programs require a documented budget, sensitivity analysis and a funding source. Projected revenue is an assumption until independently validated. Do not fund a deficit by assuming unrestricted reserves exist."
+            }
+          ],
+          "gates": [
+            {
+              "category": "finance",
+              "reason": "Document funding and downside exposure; revenue remains unverified.",
+              "severity": "review",
+              "verified": false
+            }
+          ],
+          "score": 3.0,
+          "current_state": "Undetermined pending authoritative evidence and human review.",
+          "strategic_possibilities": [
+            "Explore a limited pilot measuring net operating margin after human approval."
+          ]
+        },
+        "changed": true,
+        "reason": "Added conservation cost sensitivity.",
+        "remaining_objections": [
+          "Document funding and downside exposure; revenue remains unverified.",
+          "Conservation costs were absent from the scenario estimates."
+        ]
+      },
+      {
+        "assessment": {
+          "advisor_id": "governance-risk",
+          "position": "conditional",
+          "rationale": "SIMULATION: Evaluate delegated authority, accountability, compliance and institutional risk. Humans must confirm decision authority, compliance and insurance.",
+          "benefits": [
+            "Potential approval gates completed improvement; requires validation."
+          ],
+          "risks": [
+            "Humans must confirm decision authority, compliance and insurance."
+          ],
+          "assumptions": [
+            "Financial inputs are user assumptions, not verified facts."
+          ],
+          "evidence_gaps": [
+            "Verified bylaws, governance documentation."
+          ],
+          "citations": [
+            {
+              "document_id": "TOM-MOCK-004",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-004@1.0:3",
+              "quote": "The human board retains authority for material financial commitments and policy changes. Advisors have no voting or spending authority. Conflicts of interest require disclosure and recusal."
+            },
+            {
+              "document_id": "TOM-MOCK-007",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-007@1.0:3",
+              "quote": "Tours and events require a conservation review, attendance limits, supervision, and documented rights clearance. No collection may be moved or displayed without appropriate human authorization."
+            }
+          ],
+          "gates": [
+            {
+              "category": "authority",
+              "reason": "Humans must confirm decision authority, compliance and insurance.",
+              "severity": "review",
+              "verified": false
+            }
+          ],
+          "score": 3.5,
+          "current_state": "Undetermined pending authoritative evidence and human review.",
+          "strategic_possibilities": [
+            "Explore a limited pilot measuring approval gates completed after human approval."
+          ]
+        },
+        "changed": false,
+        "reason": "Maintained conditions after deliberation.",
+        "remaining_objections": [
+          "Humans must confirm decision authority, compliance and insurance."
+        ]
+      },
+      {
+        "assessment": {
+          "advisor_id": "preservation",
+          "position": "conditional",
+          "rationale": "SIMULATION: Protect collections, cultural heritage, artists and educational value. Conservation, visitor limits and rights require specialist review.",
+          "benefits": [
+            "Potential condition incidents improvement; requires validation."
+          ],
+          "risks": [
+            "Conservation, visitor limits and rights require specialist review."
+          ],
+          "assumptions": [
+            "Financial inputs are user assumptions, not verified facts."
+          ],
+          "evidence_gaps": [
+            "Verified collections documentation."
+          ],
+          "citations": [
+            {
+              "document_id": "TOM-MOCK-005",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-005@1.0:3",
+              "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+            },
+            {
+              "document_id": "TOM-MOCK-007",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-007@1.0:3",
+              "quote": "Tours and events require a conservation review, attendance limits, supervision, and documented rights clearance. No collection may be moved or displayed without appropriate human authorization."
+            }
+          ],
+          "gates": [
+            {
+              "category": "preservation",
+              "reason": "Conservation, visitor limits and rights require specialist review.",
+              "severity": "review",
+              "verified": false
+            }
+          ],
+          "score": 3.5,
+          "current_state": "Undetermined pending authoritative evidence and human review.",
+          "strategic_possibilities": [
+            "Explore a limited pilot measuring condition incidents after human approval."
+          ]
+        },
+        "changed": false,
+        "reason": "Maintained conditions after deliberation.",
+        "remaining_objections": [
+          "Conservation, visitor limits and rights require specialist review."
+        ]
+      },
+      {
+        "assessment": {
+          "advisor_id": "community",
+          "position": "conditional",
+          "rationale": "SIMULATION: Advance inclusive participation, stakeholder trust and philanthropic relationships. Validate accessibility and community benefit through consultation.",
+          "benefits": [
+            "Potential accessible participation improvement; requires validation."
+          ],
+          "risks": [
+            "Validate accessibility and community benefit through consultation."
+          ],
+          "assumptions": [
+            "Financial inputs are user assumptions, not verified facts."
+          ],
+          "evidence_gaps": [
+            "Verified community, values documentation."
+          ],
+          "citations": [
+            {
+              "document_id": "TOM-MOCK-005",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-005@1.0:3",
+              "quote": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback."
+            },
+            {
+              "document_id": "TOM-MOCK-002",
+              "version": "1.0",
+              "chunk_id": "TOM-MOCK-002@1.0:3",
+              "quote": "Build a sustainable, accessible cultural home for future generations through stewardship and responsible experimentation."
+            }
+          ],
+          "gates": [
+            {
+              "category": "community",
+              "reason": "Validate accessibility and community benefit through consultation.",
+              "severity": "review",
+              "verified": false
+            }
+          ],
+          "score": 3.5,
+          "current_state": "Undetermined pending authoritative evidence and human review.",
+          "strategic_possibilities": [
+            "Explore a limited pilot measuring accessible participation after human approval."
+          ]
+        },
+        "changed": false,
+        "reason": "Maintained conditions after deliberation.",
+        "remaining_objections": [
+          "Validate accessibility and community benefit through consultation."
+        ]
+      }
+    ],
+    "dissent": [
+      {
+        "advisor_id": "mission",
+        "position": "conditional",
+        "objections": [
+          "Verify mission alignment and protect artistic freedom."
+        ],
+        "reason": "Maintained conditions after deliberation."
+      },
+      {
+        "advisor_id": "finance",
+        "position": "conditional",
+        "objections": [
+          "Document funding and downside exposure; revenue remains unverified.",
+          "Conservation costs were absent from the scenario estimates."
+        ],
+        "reason": "Added conservation cost sensitivity."
+      },
+      {
+        "advisor_id": "governance-risk",
+        "position": "conditional",
+        "objections": [
+          "Humans must confirm decision authority, compliance and insurance."
+        ],
+        "reason": "Maintained conditions after deliberation."
+      },
+      {
+        "advisor_id": "preservation",
+        "position": "conditional",
+        "objections": [
+          "Conservation, visitor limits and rights require specialist review."
+        ],
+        "reason": "Maintained conditions after deliberation."
+      },
+      {
+        "advisor_id": "community",
+        "position": "conditional",
+        "objections": [
+          "Validate accessibility and community benefit through consultation."
+        ],
+        "reason": "Maintained conditions after deliberation."
+      }
+    ],
+    "gates": [
+      {
+        "category": "mission",
+        "reason": "Verify mission alignment and protect artistic freedom.",
+        "severity": "review",
+        "verified": false
+      },
+      {
+        "category": "finance",
+        "reason": "Document funding and downside exposure; revenue remains unverified.",
+        "severity": "review",
+        "verified": false
+      },
+      {
+        "category": "authority",
+        "reason": "Humans must confirm decision authority, compliance and insurance.",
+        "severity": "review",
+        "verified": false
+      },
+      {
+        "category": "preservation",
+        "reason": "Conservation, visitor limits and rights require specialist review.",
+        "severity": "review",
+        "verified": false
+      },
+      {
+        "category": "community",
+        "reason": "Validate accessibility and community benefit through consultation.",
+        "severity": "review",
+        "verified": false
+      },
+      {
+        "category": "evidence",
+        "reason": "No current verified authoritative source was supplied; organizational permissibility is undetermined.",
+        "severity": "blocking",
+        "verified": false
+      }
+    ],
+    "policy_conflicts": [],
+    "current_status": "undetermined",
+    "strategic_options": [
+      "Defer until authoritative evidence is available.",
+      "Explore a smaller accessible pilot with conservation safeguards."
+    ],
+    "weighted_score": 3.4,
+    "eligible_for_human_review": false,
+    "synthesis": {
+      "summary": "Simulation evaluates Expand educational programming at TOM House through five advisory perspectives.",
+      "recommendation": "Consider a limited pilot only after evidence gaps, funding and approval conditions are resolved. This is advice, not approval.",
+      "agreements": [
+        "Protect mission, validate costs and require human approval."
+      ],
+      "alternatives": [
+        "Defer until authoritative evidence is available.",
+        "Explore a smaller accessible pilot with conservation safeguards."
+      ],
+      "actions": [
+        {
+          "action": "Verify policies and decision authority",
+          "owner": "Board secretary",
+          "milestone": "Before commitment",
+          "dependency": "Approved source documents"
+        },
+        {
+          "action": "Prepare downside budget and funding plan",
+          "owner": "Finance lead",
+          "milestone": "Before pilot",
+          "dependency": "Validated costs and revenue"
+        },
+        {
+          "action": "Review preservation and accessibility",
+          "owner": "Program lead and conservator",
+          "milestone": "Before public access",
+          "dependency": "Specialist and community review"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Financial ROI",
+          "target": "Measure net contribution / actual cost; targets require approval",
+          "owner": "Finance lead"
+        },
+        {
+          "name": "Mission impact",
+          "target": "Track educational participation and artistic benefit",
+          "owner": "Program lead"
+        },
+        {
+          "name": "Community benefit",
+          "target": "Measure accessible participation and opt-in feedback",
+          "owner": "Community lead"
+        },
+        {
+          "name": "Preservation",
+          "target": "Track incidents and conservation findings",
+          "owner": "Conservator"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "document_id": "TOM-MOCK-005",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-005@1.0:3",
+        "text": "Evaluate a limited educational pilot before expansion. Track mission benefit, revenue and cost, preservation incidents, accessibility and community feedback.",
+        "title": "Fictional strategic plan",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 5
+      },
+      {
+        "document_id": "TOM-MOCK-001",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-001@1.0:3",
+        "text": "Support artistic freedom, preserve cultural heritage, and expand inclusive arts education. Do not censor lawful artistic expression to satisfy a revenue opportunity.",
+        "title": "Fictional mission statement",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-002",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-002@1.0:3",
+        "text": "Build a sustainable, accessible cultural home for future generations through stewardship and responsible experimentation.",
+        "title": "Fictional vision",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 3
+      },
+      {
+        "document_id": "TOM-MOCK-008",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-008@1.0:3",
+        "text": "Provide accessible participation options and subsidized places. Consult affected communities and volunteers. Collect minimal feedback data with consent.",
+        "title": "Fictional community engagement policy",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 3
+      },
+      {
+        "document_id": "TOM-MOCK-009",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-009@1.0:3",
+        "text": "Record evidence, dissent, approval conditions, accountable human owners and review dates. Legal questions go to qualified counsel. Scores never override mission, legal, safety or preservation constraints.",
+        "title": "Fictional board governance",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-001",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-001@1.0:1",
+        "text": "# Fictional mission statement",
+        "title": "Fictional mission statement",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      },
+      {
+        "document_id": "TOM-MOCK-003",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-003@1.0:3",
+        "text": "Respect artists, protect privacy, maintain accountability, welcome diverse communities, and distinguish evidence from assumptions.",
+        "title": "Fictional values",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-008",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-008@1.0:1",
+        "text": "# Fictional community engagement policy",
+        "title": "Fictional community engagement policy",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-006",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-006@1.0:3",
+        "text": "New programs require a documented budget, sensitivity analysis and a funding source. Projected revenue is an assumption until independently validated. Do not fund a deficit by assuming unrestricted reserves exist.",
+        "title": "Fictional financial policies",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 4
+      },
+      {
+        "document_id": "TOM-MOCK-004",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-004@1.0:3",
+        "text": "The human board retains authority for material financial commitments and policy changes. Advisors have no voting or spending authority. Conflicts of interest require disclosure and recusal.",
+        "title": "Fictional bylaws",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 4
+      },
+      {
+        "document_id": "TOM-MOCK-004",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-004@1.0:1",
+        "text": "# Fictional bylaws",
+        "title": "Fictional bylaws",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      },
+      {
+        "document_id": "TOM-MOCK-004",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-004@1.0:2",
+        "text": "**FICTIONAL DEMONSTRATION DOCUMENT \u2014 not adopted Foundation policy.**",
+        "title": "Fictional bylaws",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      },
+      {
+        "document_id": "TOM-MOCK-005",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-005@1.0:1",
+        "text": "# Fictional strategic plan",
+        "title": "Fictional strategic plan",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      },
+      {
+        "document_id": "TOM-MOCK-005",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-005@1.0:2",
+        "text": "**FICTIONAL DEMONSTRATION DOCUMENT \u2014 not adopted Foundation policy.**",
+        "title": "Fictional strategic plan",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      },
+      {
+        "document_id": "TOM-MOCK-007",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-007@1.0:3",
+        "text": "Tours and events require a conservation review, attendance limits, supervision, and documented rights clearance. No collection may be moved or displayed without appropriate human authorization.",
+        "title": "Fictional collections policy",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 4
+      },
+      {
+        "document_id": "TOM-MOCK-007",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-007@1.0:1",
+        "text": "# Fictional collections policy",
+        "title": "Fictional collections policy",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-001",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-001@1.0:2",
+        "text": "**FICTIONAL DEMONSTRATION DOCUMENT \u2014 not adopted Foundation policy.**",
+        "title": "Fictional mission statement",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-003",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-003@1.0:2",
+        "text": "**FICTIONAL DEMONSTRATION DOCUMENT \u2014 not adopted Foundation policy.**",
+        "title": "Fictional values",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 1
+      },
+      {
+        "document_id": "TOM-MOCK-007",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-007@1.0:2",
+        "text": "**FICTIONAL DEMONSTRATION DOCUMENT \u2014 not adopted Foundation policy.**",
+        "title": "Fictional collections policy",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      },
+      {
+        "document_id": "TOM-MOCK-009",
+        "version": "1.0",
+        "chunk_id": "TOM-MOCK-009@1.0:1",
+        "text": "# Fictional board governance",
+        "title": "Fictional board governance",
+        "status": "simulated",
+        "authoritative": false,
+        "relevance": 0
+      }
+    ],
+    "evidence_snapshot": [
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-009",
+          "title": "Fictional board governance",
+          "organization": "tom-demo",
+          "document_type": "governance",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "governance-risk",
+            "mission",
+            "finance",
+            "preservation",
+            "community"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/board-governance.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "9282694ee88f96669aa6e039387095133cee2d7ecb0964a2be3a602ef73329c8",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-004",
+          "title": "Fictional bylaws",
+          "organization": "tom-demo",
+          "document_type": "bylaws",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "governance-risk",
+            "finance"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/bylaws.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "fe71b965a29a8150bc9369ae137a9923173be4f8e7edfaa910daf6fb0f3570fc",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-007",
+          "title": "Fictional collections policy",
+          "organization": "tom-demo",
+          "document_type": "collections",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "preservation",
+            "governance-risk"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/collections-policy.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "4315cc16c9d1a6bdba2993aba8c2cdeeca4e26e4f0d30600c8e7a71b8ae95966",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-008",
+          "title": "Fictional community engagement policy",
+          "organization": "tom-demo",
+          "document_type": "community",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "community",
+            "mission"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/community-engagement.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "1cc318be81c15dac806c18cc443d6b0e95db3509a2502eae1afe2d25e92cf788",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-006",
+          "title": "Fictional financial policies",
+          "organization": "tom-demo",
+          "document_type": "finance",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "finance",
+            "governance-risk"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/financial-policies.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "0bfe5cba4bdbcefdd9abe1b7d42d30a973705084785acb467c31611c4269554d",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-001",
+          "title": "Fictional mission statement",
+          "organization": "tom-demo",
+          "document_type": "mission",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "mission",
+            "governance-risk",
+            "community"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/mission.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "81f955fad0110ea26dd9d86b738cc14b0a02d823a9096c1ca255b8aa619cad23",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-005",
+          "title": "Fictional strategic plan",
+          "organization": "tom-demo",
+          "document_type": "strategy",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "mission",
+            "finance",
+            "preservation",
+            "community"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/strategic-plan.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "646a07efc23e43ae8162bf7e019ceed32728b8687bc2612582d546a10a32db64",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-003",
+          "title": "Fictional values",
+          "organization": "tom-demo",
+          "document_type": "values",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "mission",
+            "community",
+            "governance-risk"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/values.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "bcdaa1aeeb40e63cb2312025ddf1febbe960c7130cb20482c088f49bdd599480",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      },
+      {
+        "metadata": {
+          "document_id": "TOM-MOCK-002",
+          "title": "Fictional vision",
+          "organization": "tom-demo",
+          "document_type": "vision",
+          "version": "1.0",
+          "status": "simulated",
+          "approval_status": "not_applicable",
+          "effective_date": null,
+          "classification": "public_demo",
+          "source_type": "repository",
+          "authoritative": false,
+          "applicable_advisors": [
+            "mission",
+            "community"
+          ],
+          "approval_evidence": null,
+          "source_location": "docs/organization/mock/vision.md",
+          "supersedes": null,
+          "policy_key": null,
+          "policy_position": null
+        },
+        "sha256": "bd9e49200f41b89973cb3f53ec2d925c2072a3cab7cfab5400d5b170fcdd8f40",
+        "ingested_at": "2026-01-01T00:00:00+00:00"
+      }
+    ],
+    "authority_notice": "Advisory only. No AI output authorizes spending, policy changes or implementation.",
+    "mode_notice": "Mode A assesses current evidence; Mode B explores possibilities requiring human authorization.",
+    "risk_matrix": [
+      {
+        "advisor_id": "mission",
+        "risk": "Verify mission alignment and protect artistic freedom.",
+        "likelihood": "unassessed",
+        "impact": "requires human review",
+        "mitigation": "Resolve advisor conditions before implementation"
+      },
+      {
+        "advisor_id": "finance",
+        "risk": "Document funding and downside exposure; revenue remains unverified.",
+        "likelihood": "unassessed",
+        "impact": "requires human review",
+        "mitigation": "Resolve advisor conditions before implementation"
+      },
+      {
+        "advisor_id": "finance",
+        "risk": "Conservation costs were absent from the scenario estimates.",
+        "likelihood": "unassessed",
+        "impact": "requires human review",
+        "mitigation": "Resolve advisor conditions before implementation"
+      },
+      {
+        "advisor_id": "governance-risk",
+        "risk": "Humans must confirm decision authority, compliance and insurance.",
+        "likelihood": "unassessed",
+        "impact": "requires human review",
+        "mitigation": "Resolve advisor conditions before implementation"
+      },
+      {
+        "advisor_id": "preservation",
+        "risk": "Conservation, visitor limits and rights require specialist review.",
+        "likelihood": "unassessed",
+        "impact": "requires human review",
+        "mitigation": "Resolve advisor conditions before implementation"
+      },
+      {
+        "advisor_id": "community",
+        "risk": "Validate accessibility and community benefit through consultation.",
+        "likelihood": "unassessed",
+        "impact": "requires human review",
+        "mitigation": "Resolve advisor conditions before implementation"
+      }
+    ]
+  }
+}

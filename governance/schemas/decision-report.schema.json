@@ -1,0 +1,985 @@
+{
+  "$defs": {
+    "Action": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "title": "Action",
+          "type": "string"
+        },
+        "owner": {
+          "title": "Owner",
+          "type": "string"
+        },
+        "milestone": {
+          "title": "Milestone",
+          "type": "string"
+        },
+        "dependency": {
+          "title": "Dependency",
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "owner",
+        "milestone",
+        "dependency"
+      ],
+      "title": "Action",
+      "type": "object"
+    },
+    "Assessment": {
+      "additionalProperties": false,
+      "properties": {
+        "advisor_id": {
+          "title": "Advisor Id",
+          "type": "string"
+        },
+        "position": {
+          "enum": [
+            "support",
+            "conditional",
+            "oppose",
+            "undetermined"
+          ],
+          "title": "Position",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "benefits": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Benefits",
+          "type": "array"
+        },
+        "risks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Risks",
+          "type": "array"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "evidence_gaps": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Gaps",
+          "type": "array"
+        },
+        "citations": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Citations",
+          "type": "array"
+        },
+        "gates": {
+          "items": {
+            "$ref": "#/$defs/Gate"
+          },
+          "title": "Gates",
+          "type": "array"
+        },
+        "score": {
+          "maximum": 5,
+          "minimum": 1,
+          "title": "Score",
+          "type": "number"
+        },
+        "current_state": {
+          "title": "Current State",
+          "type": "string"
+        },
+        "strategic_possibilities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Strategic Possibilities",
+          "type": "array"
+        }
+      },
+      "required": [
+        "advisor_id",
+        "position",
+        "rationale",
+        "benefits",
+        "risks",
+        "assumptions",
+        "evidence_gaps",
+        "citations",
+        "gates",
+        "score",
+        "current_state",
+        "strategic_possibilities"
+      ],
+      "title": "Assessment",
+      "type": "object"
+    },
+    "Challenge": {
+      "additionalProperties": false,
+      "properties": {
+        "from_advisor": {
+          "title": "From Advisor",
+          "type": "string"
+        },
+        "to_advisor": {
+          "title": "To Advisor",
+          "type": "string"
+        },
+        "concern": {
+          "title": "Concern",
+          "type": "string"
+        },
+        "response": {
+          "title": "Response",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from_advisor",
+        "to_advisor",
+        "concern",
+        "response"
+      ],
+      "title": "Challenge",
+      "type": "object"
+    },
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_id",
+        "version",
+        "chunk_id",
+        "quote"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "Dissent": {
+      "additionalProperties": false,
+      "properties": {
+        "advisor_id": {
+          "title": "Advisor Id",
+          "type": "string"
+        },
+        "position": {
+          "enum": [
+            "support",
+            "conditional",
+            "oppose",
+            "undetermined"
+          ],
+          "title": "Position",
+          "type": "string"
+        },
+        "objections": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Objections",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "advisor_id",
+        "position",
+        "objections",
+        "reason"
+      ],
+      "title": "Dissent",
+      "type": "object"
+    },
+    "DocumentMetadata": {
+      "additionalProperties": false,
+      "properties": {
+        "document_id": {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.-]+$",
+          "title": "Document Id",
+          "type": "string"
+        },
+        "title": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "organization": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Organization",
+          "type": "string"
+        },
+        "document_type": {
+          "enum": [
+            "mission",
+            "vision",
+            "values",
+            "bylaws",
+            "strategy",
+            "finance",
+            "collections",
+            "community",
+            "governance",
+            "other"
+          ],
+          "title": "Document Type",
+          "type": "string"
+        },
+        "version": {
+          "pattern": "^\\d+(?:\\.\\d+){0,2}$",
+          "title": "Version",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "simulated",
+            "verified",
+            "proposed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "approval_status": {
+          "enum": [
+            "approved",
+            "pending",
+            "not_applicable"
+          ],
+          "title": "Approval Status",
+          "type": "string"
+        },
+        "effective_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Date"
+        },
+        "classification": {
+          "enum": [
+            "public_demo",
+            "internal",
+            "confidential"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "source_type": {
+          "enum": [
+            "repository",
+            "upload"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "authoritative": {
+          "default": false,
+          "title": "Authoritative",
+          "type": "boolean"
+        },
+        "applicable_advisors": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Applicable Advisors",
+          "type": "array"
+        },
+        "approval_evidence": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Approval Evidence"
+        },
+        "source_location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Location"
+        },
+        "supersedes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supersedes"
+        },
+        "policy_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Policy Key"
+        },
+        "policy_position": {
+          "anyOf": [
+            {
+              "enum": [
+                "allow",
+                "require_review",
+                "prohibit"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Policy Position"
+        }
+      },
+      "required": [
+        "document_id",
+        "title",
+        "organization",
+        "document_type",
+        "version",
+        "status",
+        "approval_status",
+        "classification",
+        "source_type",
+        "applicable_advisors"
+      ],
+      "title": "DocumentMetadata",
+      "type": "object"
+    },
+    "EvidencePassage": {
+      "additionalProperties": false,
+      "properties": {
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "simulated",
+            "verified",
+            "proposed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "authoritative": {
+          "title": "Authoritative",
+          "type": "boolean"
+        },
+        "relevance": {
+          "title": "Relevance",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "document_id",
+        "version",
+        "chunk_id",
+        "text",
+        "title",
+        "status",
+        "authoritative",
+        "relevance"
+      ],
+      "title": "EvidencePassage",
+      "type": "object"
+    },
+    "EvidenceSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "metadata": {
+          "$ref": "#/$defs/DocumentMetadata"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "ingested_at": {
+          "title": "Ingested At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "metadata",
+        "sha256",
+        "ingested_at"
+      ],
+      "title": "EvidenceSnapshot",
+      "type": "object"
+    },
+    "ExecutionEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "stage": {
+          "enum": [
+            "independent",
+            "challenge",
+            "revision",
+            "synthesis"
+          ],
+          "title": "Stage",
+          "type": "string"
+        },
+        "actor": {
+          "title": "Actor",
+          "type": "string"
+        },
+        "started_at": {
+          "title": "Started At",
+          "type": "string"
+        },
+        "completed_at": {
+          "title": "Completed At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "stage",
+        "actor",
+        "started_at",
+        "completed_at"
+      ],
+      "title": "ExecutionEvent",
+      "type": "object"
+    },
+    "Gate": {
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "enum": [
+            "mission",
+            "legal",
+            "safety",
+            "preservation",
+            "authority",
+            "evidence",
+            "finance",
+            "community"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "blocking",
+            "review"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "verified": {
+          "default": false,
+          "title": "Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "category",
+        "reason",
+        "severity"
+      ],
+      "title": "Gate",
+      "type": "object"
+    },
+    "Metric": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "type": "string"
+        },
+        "owner": {
+          "title": "Owner",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "target",
+        "owner"
+      ],
+      "title": "Metric",
+      "type": "object"
+    },
+    "Revision": {
+      "additionalProperties": false,
+      "properties": {
+        "assessment": {
+          "$ref": "#/$defs/Assessment"
+        },
+        "changed": {
+          "title": "Changed",
+          "type": "boolean"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "remaining_objections": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Remaining Objections",
+          "type": "array"
+        }
+      },
+      "required": [
+        "assessment",
+        "changed",
+        "reason",
+        "remaining_objections"
+      ],
+      "title": "Revision",
+      "type": "object"
+    },
+    "RiskEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "advisor_id": {
+          "title": "Advisor Id",
+          "type": "string"
+        },
+        "risk": {
+          "title": "Risk",
+          "type": "string"
+        },
+        "likelihood": {
+          "title": "Likelihood",
+          "type": "string"
+        },
+        "impact": {
+          "title": "Impact",
+          "type": "string"
+        },
+        "mitigation": {
+          "title": "Mitigation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "advisor_id",
+        "risk",
+        "likelihood",
+        "impact",
+        "mitigation"
+      ],
+      "title": "RiskEntry",
+      "type": "object"
+    },
+    "Scenario": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "maxLength": 160,
+          "minLength": 3,
+          "title": "Title",
+          "type": "string"
+        },
+        "proposal": {
+          "maxLength": 12000,
+          "minLength": 20,
+          "title": "Proposal",
+          "type": "string"
+        },
+        "desired_outcome": {
+          "maxLength": 2000,
+          "minLength": 3,
+          "title": "Desired Outcome",
+          "type": "string"
+        },
+        "horizon": {
+          "default": "90-day pilot",
+          "enum": [
+            "90-day pilot",
+            "12-month strategy",
+            "Three-year transformation"
+          ],
+          "title": "Horizon",
+          "type": "string"
+        },
+        "mode": {
+          "default": "both",
+          "enum": [
+            "both",
+            "current",
+            "strategic"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "budget": {
+          "default": 0,
+          "maximum": 1000000000000.0,
+          "minimum": 0,
+          "title": "Budget",
+          "type": "number"
+        },
+        "projected_revenue": {
+          "default": 0,
+          "maximum": 1000000000000.0,
+          "minimum": 0,
+          "title": "Projected Revenue",
+          "type": "number"
+        },
+        "document_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Document Ids",
+          "type": "array"
+        },
+        "weights": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Weights",
+          "type": "object"
+        }
+      },
+      "required": [
+        "title",
+        "proposal",
+        "desired_outcome"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "Synthesis": {
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "recommendation": {
+          "title": "Recommendation",
+          "type": "string"
+        },
+        "agreements": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Agreements",
+          "type": "array"
+        },
+        "alternatives": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "actions": {
+          "items": {
+            "$ref": "#/$defs/Action"
+          },
+          "title": "Actions",
+          "type": "array"
+        },
+        "metrics": {
+          "items": {
+            "$ref": "#/$defs/Metric"
+          },
+          "title": "Metrics",
+          "type": "array"
+        }
+      },
+      "required": [
+        "summary",
+        "recommendation",
+        "agreements",
+        "alternatives",
+        "actions",
+        "metrics"
+      ],
+      "title": "Synthesis",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "organization": {
+      "title": "Organization",
+      "type": "string"
+    },
+    "scenario": {
+      "$ref": "#/$defs/Scenario"
+    },
+    "simulation": {
+      "title": "Simulation",
+      "type": "boolean"
+    },
+    "demo_evidence": {
+      "title": "Demo Evidence",
+      "type": "boolean"
+    },
+    "provider": {
+      "title": "Provider",
+      "type": "string"
+    },
+    "configuration_version": {
+      "title": "Configuration Version",
+      "type": "string"
+    },
+    "advisor_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Advisor Versions",
+      "type": "object"
+    },
+    "stages": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "title": "Stages",
+      "type": "array"
+    },
+    "execution_trace": {
+      "items": {
+        "$ref": "#/$defs/ExecutionEvent"
+      },
+      "maxItems": 12,
+      "minItems": 12,
+      "title": "Execution Trace",
+      "type": "array"
+    },
+    "initial": {
+      "items": {
+        "$ref": "#/$defs/Assessment"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "title": "Initial",
+      "type": "array"
+    },
+    "challenges": {
+      "items": {
+        "$ref": "#/$defs/Challenge"
+      },
+      "title": "Challenges",
+      "type": "array"
+    },
+    "revisions": {
+      "items": {
+        "$ref": "#/$defs/Revision"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "title": "Revisions",
+      "type": "array"
+    },
+    "dissent": {
+      "items": {
+        "$ref": "#/$defs/Dissent"
+      },
+      "title": "Dissent",
+      "type": "array"
+    },
+    "gates": {
+      "items": {
+        "$ref": "#/$defs/Gate"
+      },
+      "title": "Gates",
+      "type": "array"
+    },
+    "policy_conflicts": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Policy Conflicts",
+      "type": "array"
+    },
+    "current_status": {
+      "enum": [
+        "permissible",
+        "conditional",
+        "prohibited",
+        "undetermined",
+        "not_assessed"
+      ],
+      "title": "Current Status",
+      "type": "string"
+    },
+    "strategic_options": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Strategic Options",
+      "type": "array"
+    },
+    "weighted_score": {
+      "maximum": 5,
+      "minimum": 1,
+      "title": "Weighted Score",
+      "type": "number"
+    },
+    "eligible_for_human_review": {
+      "title": "Eligible For Human Review",
+      "type": "boolean"
+    },
+    "synthesis": {
+      "$ref": "#/$defs/Synthesis"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/EvidencePassage"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "evidence_snapshot": {
+      "items": {
+        "$ref": "#/$defs/EvidenceSnapshot"
+      },
+      "title": "Evidence Snapshot",
+      "type": "array"
+    },
+    "authority_notice": {
+      "title": "Authority Notice",
+      "type": "string"
+    },
+    "mode_notice": {
+      "title": "Mode Notice",
+      "type": "string"
+    },
+    "risk_matrix": {
+      "items": {
+        "$ref": "#/$defs/RiskEntry"
+      },
+      "title": "Risk Matrix",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "created_at",
+    "organization",
+    "scenario",
+    "simulation",
+    "demo_evidence",
+    "provider",
+    "configuration_version",
+    "advisor_versions",
+    "stages",
+    "execution_trace",
+    "initial",
+    "challenges",
+    "revisions",
+    "dissent",
+    "gates",
+    "policy_conflicts",
+    "current_status",
+    "strategic_options",
+    "weighted_score",
+    "eligible_for_human_review",
+    "synthesis",
+    "evidence",
+    "evidence_snapshot",
+    "authority_notice",
+    "mode_notice",
+    "risk_matrix"
+  ],
+  "title": "DecisionReport",
+  "type": "object"
+}
